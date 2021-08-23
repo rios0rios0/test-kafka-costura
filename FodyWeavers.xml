@@ -1,28 +1,3 @@
 ﻿<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
-  <Costura>
-    <PreloadOrder>
-      librdkafka
-      librdkafkacpp
-      libzstd
-      msvcp120
-      msvcr120
-      zlib
-    </PreloadOrder>
-    <Unmanaged32Assemblies>
-      librdkafka
-      librdkafkacpp
-      libzstd
-      msvcp120
-      msvcr120
-      zlib
-    </Unmanaged32Assemblies>
-    <Unmanaged64Assemblies>
-      librdkafka
-      librdkafkacpp
-      libzstd
-      msvcp120
-      msvcr120
-      zlib
-    </Unmanaged64Assemblies>
-  </Costura>
+  <Costura PreloadOrder="zlib|libzstd|librdkafka|librdkafkacpp" />
 </Weavers>

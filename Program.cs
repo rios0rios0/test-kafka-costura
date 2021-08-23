@@ -6,7 +6,8 @@ namespace ConsoleApp1
   {
     private static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Confluent.Kafka.Library.Load("kernel32.dll");
+
       QueueHelper.SendMessage("test", "message1");
 
       Console.WriteLine(Guid.NewGuid().ToString());
